@@ -1,21 +1,330 @@
+@font-face {
+	font-family: 'Roboto Bold';
+	src:url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: 'Roboto Medium';
+	src:url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+	font-family: 'Roboto Regular';
+	src:url(../fonts/Roboto-Regular.ttf);
+}
 body {
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	font-weight: 300;
+	font-family: 'Roboto Regular', sans-serif;
+	margin: 0;
 }
 .title {
-    font-size: 55px;
-    line-height: 55px;
-    color: black;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+	font-size: 55px;
+	line-height: 55px;
+	color: black;
+	font-weight: 500;
+	font-family: 'Roboto Medium', sans-serif;
+	margin-top: 0;
 }
 .index-content-title {
-    font-size: 45px;
-    line-height: 45px;
-    color: black;
-    font-weight: 800;
-    font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	line-height: 45px;
+	color: black;
+	font-weight: 800;
+	font-family: 'Roboto Bold', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.main-header,
+.slider-wrap {
+	background-color: #eeeeee;
+}
+.header-wrap {
+	padding-top: 43px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-navigation {
+	width: 860px;
+}
+.main-list {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+.main-list li {
+	padding-right: 25px;
+	padding-left: 25px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: 'Roboto Medium', sans-serif;
+	font-size: 16px;
+}
+.user-block {
+	width: 160px;
+}
+.user-list {
+	list-style-type: none;
+}
+.user-list li {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: 'Roboto Medium', sans-serif;
+}
+.slider-content {
+	height: 425px;
+	overflow: hidden;
+	display: flex;
+	position: relative;
+}
+.slide {
+	min-width: 1200px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.slide-descr {
+	flex-shrink: 0;
+	width: 420px;
+}
+.slide-descr p {
+	color: #283136;
+	margin-bottom: 0;
+}
+.slider-title {
+	margin-bottom: 25px;
+}
+.slider-indicators {
+	width: 88px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 95px;
+	margin: auto;
+	padding-left: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.slider-indicators li {
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	float: left;
+	list-style-type: none;
+	border-radius: 50%;
+}
+.slider-indicators .active {
+	box-shadow: 0 0 0 3px #c1c1c1 inset;
+	border: 3px solid #fff;
+	box-sizing: border-box;
+}
+.features {
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #fff;
+}
+.features-item {
+	width: 300px;
+	margin-right: 100px;
+}
+.features-image {
+	width: 300px;
+	height: 145px;
+}
+.features-image-1 {
+	background-image: url(../img/illustration-1.png);
+}
+.features-image-2 {
+	background-image: url(../img/illustration-2.png);
+}
+.features-image-3 {
+	background-image: url(../img/illustration-3.png);
+}
+.features p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.features .features-name {
+	font-family: 'Roboto Bold', sans-serif;
+	font-size: 24px;
+	color: #000;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+.btn {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Roboto Medium', sans-serif;
+	display: inline-block;
+	width: 160px;
+	padding-top: 18px;
+	padding-right: 10px;
+	padding-bottom: 18px;
+	padding-left: 10px;
+	margin-top: 40px;
+	text-align-last: center;
+	border-radius: 2px;
+}
+.btn-red {
+	background-color: #fb565a;
+}
+.btn-green {
+	background-color: #00ca74;
+}
+.btn-yellow {
+	background-color: #efc84a;
+}
+.index-content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 75px;
+	background-color: #fff;
+	border-top: 2px solid #eeeeee;
+}
+.index-content-left {
+	width: 680px;
+}
+.index-content-right {
+	width: 360px;
+}
+.partners-logo {
+	display: flex;
+	justify-content: space-around;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	margin-bottom: 80px;
+}
+.partners-logo img {
+	opacity: 0.2;
+}
+.main-title {
+	height: 240px;
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-title .title {
+	text-align: center;
+}
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.sidebar {
+	width: 300px;
+}
+.sidebar-item-wrap {
+	display: flex;
+	flex-direction: column;
+}
+.content-wrap {
+	width: 800px;
+}
+.filter {
+	display: flex;
+	justify-content: space-between;
+}
+.filter-list {
+	display: flex;
+	justify-content: flex-start;
+	list-style-type: none;
+	padding-left: 0;
+}
+.filter-list li {
+	padding-right: 25px;
+}
+.goods-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.goods-item {
+	width: 360px;
+}
+.footer {
+	position: relative;
+}
+.footer-contacts {
+	width: 319px;
+	height: 308px;
+	padding-left: 60px;
+	padding-right: 60px;
+	box-sizing: border-box;
+	background-color: #fff;
+	position: absolute;
+	top: 52px;
+	left: 140px;
+}
+.contact-text {
+	font-family: 'Roboto Regular', sans-serif;
+	color: #666666;
+}
+.contacts-title {
+	font-family: 'Roboto Bold', sans-serif;
+	font-size: 18px;
+	color: #000;
+	margin-top: 40px;
+}
+.footer-contacts .btn {
+	margin-top: 20px;
+}
+.footer-social {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 217px;
+}
+.footer-social-list {
+	width: 260px;
+	margin-right: 140px;
+	display: flex;
+	justify-content: space-between;
+}
+.social-btn {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	background-color: #e1e1e1;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	text-indent: -9999px;
+}
+.social-btn-vk {
+	background-image: url(../img/vk-icon.png);
+}
+.social-btn-fb {
+	background-image: url(../img/fb-icon.png);
+}
+.social-btn-inst {
+	background-image: url(../img/insta-icon.png);
+}
+.footer-sale {
+	width: 560px;
+}
+.footer-sale-title {
+	font-family: 'Roboto Bold', sans-serif;
+	font-size: 36px;
+	margin-bottom: 0;
+}
+.footer-sale-text {
+	color: #444444;
+}
+.modal {
+	display: none;
 }
