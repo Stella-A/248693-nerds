@@ -182,14 +182,18 @@
 	<div class="modal">
 		<h2>Напишите нам</h2>
 		<form action="#" method="post" name="wtite-us">
-			<label for="name">Ваше имя:</label>
-			<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
-			<label for="mail">Ваш e-mail:</label>
-			<input type="email" id="mail" name="mail" placeholder="Для отправки ответа">
+			<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+			<div class="modal-user">
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+			</div>
+			<div class="modal-user">
+				<label for="mail">Ваш e-mail:</label>
+				<input type="email" id="mail" name="mail" placeholder="Для отправки ответа">
+			</div>
 			<label for="message">Текст письма:</label>
-			<textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме">
-			</textarea>
-			<input type="submit" value="Отправить">
+			<textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			<input type="submit" value="Отправить" class="btn btn-modal">
 		</form>
 	</div>
 </body>
