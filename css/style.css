@@ -299,11 +299,29 @@ a {
 .btn-red {
 	background-color: #fb565a;
 }
+.btn-red:hover {
+	background-color: #e74246;
+}
+.btn-red:active {
+	background-color: #d7373b;
+}
 .btn-green {
 	background-color: #00ca74;
 }
+.btn-green:hover {
+	background-color: #00bc6c;
+}
+.btn-green:active {
+	background-color: #00aa62;
+}
 .btn-yellow {
 	background-color: #efc84a;
+}
+.btn-yellow:active {
+	background-color: #eab534;
+}
+.btn-yellow:hover {
+	background-color: #e5a722;
 }
 .index-content {
 	display: flex;
@@ -425,6 +443,12 @@ sup {
 }
 .partners-logo img {
 	opacity: 0.2;
+}
+.partners-logo img:hover {
+	opacity: 1;
+}
+.partners-logo img:active {
+	opacity: 0.1;
 }
 .main-title {
 	height: 225px;
@@ -768,6 +792,17 @@ sup {
 }
 .social-btn-inst {
 	background-image: url("../img/insta-icon.png");
+}
+.social-btn:hover {
+	background-color: #e74246;
+}
+.social-btn:active {
+	background-color: #d7373b;
+}
+.social-btn-vk:active,
+.social-btn-fb:active,
+.social-btn-inst:active {
+	opacity: 0.3;
 }
 .footer-sale {
 	width: 560px;
