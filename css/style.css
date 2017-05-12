@@ -770,9 +770,9 @@ sup {
 }
 .goods-info p {
 	width: 227px;
-	height: 38px;
+	max-height: 38px;
 	margin: auto;
-	overflow: hidden;
+	overflow: auto;
 	color: #666666;
 	line-height: 18px;
 }
