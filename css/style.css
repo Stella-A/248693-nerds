@@ -1,20 +1,20 @@
 @font-face {
 	font-family: "Roboto Bold";
-	src:url("../fonts/Roboto-Bold.ttf");
-	src:url("../fonts/robotobold.woff");
-	src:url("../fonts/robotobold.woff2");
+	src:url("../fonts/Roboto-Bold.ttf") format('truetype');
+	src:url("../fonts/robotobold.woff") format('woff'),
+			url("../fonts/robotobold.woff2") format('woff');
 }
 @font-face {
 	font-family: "Roboto Medium";
-	src:url("../fonts/Roboto-Medium.ttf");
-	src:url("../fonts/robotomedium.woff");
-	src:url("../fonts/robotomedium.woff2");
+	src:url("../fonts/Roboto-Medium.ttf") format('truetype');
+	src:url("../fonts/robotomedium.woff") format('woff'),
+			url("../fonts/robotomedium.woff2") format('woff');
 }
 @font-face {
 	font-family: "Roboto Regular";
-	src:url("../fonts/Roboto-Regular.ttf");
-	src:url("../fonts/roboto.woff");
-	src:url("../fonts/roboto.woff2");
+	src:url("../fonts/Roboto-Regular.ttf") format('truetype');
+	src:url("../fonts/roboto.woff") format('woff'),
+			url("../fonts/roboto.woff2") format('woff');
 }
 body {
 	font-size: 16px;
@@ -754,12 +754,10 @@ sup {
 	opacity: 1;
 }
 .goods-info .btn {
-	position: absolute;
-	right: 0;
-	bottom: 45px;
-	left: 0;
 	margin: auto;
+	margin-top: 30px;
 	width: 199px;
+	cursor: pointer;
 }
 .goods-info .btn-red:active {
 	color: #ffffff;
@@ -770,7 +768,7 @@ sup {
 }
 .goods-info p {
 	width: 227px;
-	max-height: 38px;
+	max-height: 77px;
 	margin: auto;
 	overflow: auto;
 	color: #666666;
@@ -812,6 +810,9 @@ sup {
 	margin-top: 60px;
 	position: relative;
 }
+.footer-content {
+	position: relative;
+}
 .footer-contacts {
 	width: 319px;
 	height: 308px;
@@ -820,8 +821,8 @@ sup {
 	box-sizing: border-box;
 	background-color: #fff;
 	position: absolute;
-	top: 54px;
-	left: 140px;
+	top: -368px;
+	left: 28px;
 }
 .contact-text {
 	font-family: "Roboto Regular", "Arial", sans-serif;
